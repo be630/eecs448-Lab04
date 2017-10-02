@@ -13,7 +13,6 @@
 	
 	$shipCost = 0;
 	$shipName;
-	$finalCost = $shipCost + $subT1 + $subT2 + $subT3;
 	
 	if($shippingType == "Free")
 	{
@@ -30,6 +29,8 @@
 		$shipCost = 50;
 		$shipName = 'Night';
 	}
+
+	$finalCost = $shipCost + $subT1 + $subT2 + $subT3;
 	
 	
 	echo "Welcome!<br>";
