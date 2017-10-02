@@ -2,35 +2,35 @@
   
 	echo "<table>";
 
-		for($r = 0; $r <= 11; $r++)
+		for($r = 0; $r <= 100; $r++)
 		{
 			echo "<tr>";
 			
-			for($c = 0; $c <= 11; $c++)
+			for($c = 0; $c <= 100; $c++)
 			{
 				echo "<td>";
 				if($r == 0)
 				{
 					if($c == 0)
 					{
-						echo "";
+						echo "";//prints the first blank index
 					}
 					else
 					{
-						echo "$c";
+						echo "$c";//prints the col number in row 0
 					}
 				}
 				else if($c == 0)
 				{
 					if($r != 0)
 					{
-						echo "$r";
+						echo "$r";//prints the row number in col 0;
 					}
 				}
 				else
 				{
 					$populate = $r * $c;
-					echo "$populate";
+					echo "$populate";//prints the muiltiple of the row an col number
 				}
 				
 				echo "</td>";
